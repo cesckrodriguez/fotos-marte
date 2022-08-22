@@ -1,0 +1,14 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.margen{
+    background-color: blue;
+    height: 155px;
+    width: 300px;
+}
+.row{
+    margin: 2px solid black;
+} */
