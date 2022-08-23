@@ -8,9 +8,9 @@ async function traerDatos(maquina){
     var contenedor = document.getElementById("contenedorCartas");
     contenedor.classList.add("margen")
     console.log(lista)
-   
+    contenedor.innerHTML = "";
     lista.forEach((elemento,indice,arreglo)=>{
-        contenedor.innerHTML += `<div class="card mb-2 col-sm-12 col-md-6 col-lg-4">
+        contenedor.innerHTML += `<div class="card mb-2 col-sm-12 col-md-6 col-lg-4" style ="width: 18rem">
         <img src=${elemento.img_src} class="card-img-top" style="height: 100%" alt=${elemento.id}>
         <div class="card-body">
           <h5 class="card-title">${elemento.camera.full_name}</h5>
@@ -28,3 +28,4 @@ async function traerDatos(maquina){
     traerDatos(maquina);
 }
 
+console.log("hola")

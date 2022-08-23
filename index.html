@@ -14,22 +14,19 @@
         <h1>Fotos de marte</h1>
 
         <nav class="navbar bg-light">
-            <div class="container-fluid style="border: black 2px solid"">
-                <div class="container-fluid" >
-              <a class="navbar-brand">NASA</a>
+            <div class="container-fluid">
+              <a class="navbar-brand">Nasa</a>
               <label for="#">Selecciona tu Rover</label>
               <form class="d-flex" role="search">
-                <select class="form-control me-2" id="robot" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                    <option value="Curiosity">Curiosity</option>
-                    <option value="Opportunity">Opportunity</option>
-                    <option value="Spirit">Spirit</option>
+                <select class="form-control me-2" id="robot" type="search" placeholder="Search" aria-label="Search">
+                <option value="curiosity">Curiosity</option>
+                <option value="opportunity">Opportunity</option>   
+                <option value="spirit">Spirit</option>
                 </select>
-                <button class="btn btn-outline-success" onclick="Buscar()" type="button">Buscar</button>
+                <button class="btn btn-outline-success" type="button" onclick="Buscar()">Buscar</button>
               </form>
             </div>
-
-            </div>
-        </nav>
+          </nav>
 
         <div class="row mt-4" id="contenedorCartas"></div>
         
